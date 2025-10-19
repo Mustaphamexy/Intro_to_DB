@@ -1,3 +1,4 @@
+-- Print full description of books table without using DESCRIBE or EXPLAIN
 SELECT 
     COLUMN_NAME AS 'Field',
     COLUMN_TYPE AS 'Type',
@@ -8,7 +9,7 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS 
 WHERE 
-    TABLE_SCHEMA = DATABASE() 
+    TABLE_SCHEMA = 'alx_book_store' 
     AND TABLE_NAME = 'books'
 ORDER BY 
     ORDINAL_POSITION;

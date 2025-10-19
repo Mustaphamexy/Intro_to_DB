@@ -1,8 +1,9 @@
-INSERT INTO CUSTOMERS (
-    CUSTOMER_ID, 
-    CUSTOMER_NAME, 
-    EMAIL, 
-    ADDRESS
+-- Insert a single row into customer table
+INSERT INTO customer (
+    customer_id, 
+    customer_name, 
+    email, 
+    address
 ) 
 VALUES (
     1, 
